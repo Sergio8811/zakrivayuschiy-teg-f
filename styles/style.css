@@ -249,7 +249,7 @@
   mix-blend-mode: difference;
   font-family: var(--accent-font);
   font-size: 14px;
-  line-height: 90%;
+  line-height: 12.6px;
   color: var(--button-text-color);
 }
 .like-icon {
@@ -336,6 +336,7 @@
   align-items: center;
   border: 2px solid var(--text-color);
   width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  margin: 0 auto 103px;
 }
 .floppy {
   max-width: 21px;
@@ -390,6 +391,7 @@ dialog::backdrop {
   font-family: var(--accent-font);
   color: var(--text-color);
   text-transform: uppercase;
+  max-width: 237px;
 }
 .dialog-window-close {
   width: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
@@ -399,9 +401,6 @@ dialog::backdrop {
   text-transform: uppercase;
 }
 /*футер*/
-.footer {
-  padding: 51px 0px 103px;
-}
 @media (width <= 375.5px) {
   /*поправить в итоге на 375*/
   .header {
@@ -410,7 +409,7 @@ dialog::backdrop {
   .section-title {
       padding: 3px 8px;
   }
-  .padding {
+  .section-subtitle {
       padding: 0px 28.75px 0px 0px;
   }
   .image {
@@ -422,6 +421,7 @@ dialog::backdrop {
   }
   .button-floppy {
       flex-direction: column;
+      margin: 0 auto 103px;
   }
   .watermark {
       inset-inline-end: 9px;
@@ -431,8 +431,5 @@ dialog::backdrop {
   }
   .section-image-container {
       max-height: 379px;
-  }
-  .footer {
-    padding: 51px 0px 100px;
   }
 }
