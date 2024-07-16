@@ -12,6 +12,64 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+.card__icon-button {
+  block-size: 34px;
+  background-color: transparent;
+  border: none;
+  transition: translate 0.3s ease;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+.like-icon .core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+.like-icon .main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+.like-icon .contour {
+  fill: var(--text-color, red);
+  transition: fill 0.1s linear;
+}
+/*состояния сердца*/
+.like-icon:hover .core {
+  fill: var(--text-color, red);
+  transition: fill 0.3s linear;
+}
+.like-icon:hover .main-body {
+  fill: var(--text-color, red);
+  transition: fill 0.3s 0.05s linear;
+}
+.like-icon:active .core {
+  fill: var(--heart-sparks-color);
+  transition: fill 0.3s linear;
+}
+.like-icon:active .main-body {
+  fill: var(--heart-sparks-color);
+  transition: fill 0.3s 0.05s linear;
+}
+.like-icon.is-liked .core {
+  fill: var(--heart-sparks-color);
+  transition: fill 0.3s linear;
+}
+.like-icon.is-liked .main-body {
+  fill: var(--heart-sparks-color);
+  transition: fill 0.3s 0.05s linear;
+}
+.like-icon.is-liked .contour {
+  fill: var(--heart-sparks-color);
+  transition: fill 0.3s 0.06s linear;
+}
+.like-icon.is-liked .heart {
+  animation: heart 0.3s 0.1s ease-in 1 alternate;
+  transform-origin: center;
+}
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s 0.3s ease-in 1 alternate;
+}
+
 @keyframes marker-disabled-button {
   0% {
     transform: translateX(0px);
