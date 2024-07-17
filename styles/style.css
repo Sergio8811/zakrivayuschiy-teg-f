@@ -19,7 +19,7 @@
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--text-bold);
   background-color: var(--background-color, white);
-  color: var(--text-color, red);
+  color: var(--text-color, rgb(0, 204, 20));
   font-family: var(--main-font, "Inter", sans-serif);
   background-size: cover;
   background-image: var(--background-image);
@@ -281,7 +281,7 @@
   padding: 15px 18px;
   align-items: center;
   border: 2px solid var(--text-color, red);
-  width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  max-width: 335px;
   margin: 0 auto 103px;
 }
 .floppy {
