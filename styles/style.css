@@ -159,14 +159,14 @@
 .filter-hue-rotate {
   filter: hue-rotate(-90deg);
 }
-.filter-section-image-container {
+.section-image-container {
   position: relative;
   border-bottom: 2px solid var(--text-color, red);
   border-top: 2px solid var(--text-color, red);
   max-height: 700px;
 }
 .watermark {
-  font-family: var(--accent-font, "PressStart2P", fantasy);
+  font-family: var(--accent-font);
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
@@ -175,7 +175,7 @@
   inset-inline-end: 25px;
   inset-block-start: 25px;
   opacity: 0.5;
-  color: var(--text-color, red);
+  color: var(--text-color);
   text-shadow: -1px 0 var(--watermark-stroke-panel), 0 1px var(--watermark-stroke-panel), 1px 0 var(--watermark-stroke-panel), 0 -1px var(--watermark-stroke-panel);
 }
 @supports ((-webkit-text-stroke: 1px var(--watermark-stroke-panel)) or (text-stroke: 1px var(--watermark-stroke-panel))) {
